@@ -15,7 +15,7 @@ def ip():
 def nics():
     """Information on installed network interface cards."""
     if sys.platform == 'linux':
-        return subprocess.call('ifconfig')
+        return subprocess.call('ifconfig 2> /dev/null || ip addr')
     elif sys.platform == 'darwin':
         return subprocess.call('ifconfig')
     elif sys.platform == 'win32':
