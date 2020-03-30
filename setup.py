@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='tully',
-    version="0.0.0",
+    version="0.0.1",
     author="Tully Rankin",
     author_email="tully.rankin@gmail.com",
     url="https://github.com/tullyrankin/tully",
