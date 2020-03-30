@@ -19,8 +19,8 @@ def nics() -> List[str]:
     output = []
 
     if sys.platform == 'linux':
-        # first try ip addr
         try:
+            # first we try ip addr command
             out = subprocess.Popen(["ip", "addr"],
                                    stdout=subprocess.PIPE)
             stdout, stderr = out.communicate()
