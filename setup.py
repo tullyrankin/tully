@@ -1,8 +1,10 @@
 from setuptools import find_packages, setup
 
+from tully import __version__ as version
+
 setup(
     name='tully',
-    version="0.0.2",
+    version=version,
     author="Tully Rankin",
     author_email="tully.rankin@gmail.com",
     url="https://github.com/tullyrankin/tully",
