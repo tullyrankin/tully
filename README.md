@@ -5,6 +5,11 @@ Tully is a command-line tool for common tasks.
 
 ### Networking
 
+Get IP Address for a given hostname
+```bash
+tully network host <hostname>
+```
+
 Get Default IP Address
 ```bash
 tully network ip 
