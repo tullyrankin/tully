@@ -14,6 +14,7 @@ Version: {version}"""
 
 class NetworkCli:
     def __init__(self):
+        self.host = network.host_ip
         self.ip = network.ip
         self.nics = network.nics
 

@@ -37,3 +37,11 @@ def nics() -> List[str]:
         return subprocess.call('ipconfig')
 
     return output
+
+
+def host_ip(hostname: str) -> str:
+    """Retrieves IP address from DNS for given hostname."""
+    try:
+        return socket.gethostbyname(hostname)
+    except socket.gaierror:
+        return "No record found."
