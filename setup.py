@@ -21,6 +21,7 @@ setup(
         ]
     },
     install_requires=[
-        "fire"
+        "fire",
+        "requests"
     ]
 )
